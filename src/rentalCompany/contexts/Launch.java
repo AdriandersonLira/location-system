@@ -1,6 +1,6 @@
 package rentalCompany.contexts;
 
-public class Release extends Rating {
+public class Launch extends Rating {
     private static final int RELEASE = 1;
 
     @Override

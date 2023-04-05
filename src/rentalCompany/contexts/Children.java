@@ -1,6 +1,6 @@
 package rentalCompany.contexts;
 
-public class Kids extends Rating {
+public class Children extends Rating {
     private static final int KIDS = 2;
     @Override
     public int getPriceCode() {
@@ -13,7 +13,7 @@ public class Kids extends Rating {
     public double getRentAmount(int daysRented) {
         double price = 1.5;
 
-        price = daysRented > 3 ? (daysRented * 3) * 1.5 : price;
+        price = daysRented > 3 ? (daysRented - 3) * 1.5 + price : price;
 
         return price;
     }

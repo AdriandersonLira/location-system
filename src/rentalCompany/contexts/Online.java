@@ -1,7 +1,7 @@
 package rentalCompany.contexts;
 
 public class Online extends Rating {
-    private static final int ONLINE = 2;
+    private static final int ONLINE = 3;
 
     @Override
     public int getPriceCode() {
@@ -12,10 +12,10 @@ public class Online extends Rating {
 
     @Override
     public double getRentAmount(int daysRented) {
-        double daysRentedCalc = daysRented > 3
+        double price = daysRented > 3
                 ? daysRented * 3.0
                 : daysRented * 4.0;
 
-        return daysRentedCalc;
+        return price;
     }
 }

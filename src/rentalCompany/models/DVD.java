@@ -1,9 +1,6 @@
 package rentalCompany.models;
 
-import rentalCompany.contexts.Normal;
-import rentalCompany.contexts.Online;
-import rentalCompany.contexts.Rating;
-import rentalCompany.contexts.Release;
+import rentalCompany.contexts.*;
 import rentalCompany.interfaces.Rentable;
 
 public class DVD implements Rentable {
@@ -28,9 +25,12 @@ public class DVD implements Rentable {
                 this.rating = new Normal();
                 break;
             case 1:
-                this.rating = new Release();
+                this.rating = new Launch();
                 break;
             case 2:
+                this.rating = new Children();
+                break;
+            case 3:
                 this.rating = new Online();
                 break;
             default:

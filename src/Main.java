@@ -16,9 +16,9 @@ public class Main {
         client.addRent(new Rent(new DVD("O Gato de Botas 2" , 1), 30));
         client.addRent(new Rent(new DVD("Arremessando Alto" , 1), 4));
         client.addRent(new Rent(new DVD("Moana"             , 2), 10));
-        client.addRent(new Rent(new DVD("Uma Noite no Museu", 1), 30));
-        client.addRent(new Rent(new Console("FIFA 23"       , 2, VideoGame.XBOX_SERIES_S), 7));
-        client.addRent(new Rent(new Console("Call Of Duty"  , 2, VideoGame.PS5          ), 4));
+        client.addRent(new Rent(new DVD("Uma Noite no Museu", 0), 3));
+        client.addRent(new Rent(new Console("FIFA 23"       , 3, VideoGame.XBOX_SERIES_S), 7));
+        client.addRent(new Rent(new Console("Call Of Duty"  , 3, VideoGame.PS5          ), 4));
 
         Extract extract = new Text(client);
         System.out.println(extract.extractGenerator());
