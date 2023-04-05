@@ -40,10 +40,6 @@ public class DVD implements Rentable {
         this.priceCode = priceCode;
     }
 
-    public int getPriceCode() {
-        return this.rating.getPriceCode();
-    }
-
     public double getRentAmount(int daysRented) {
         return this.rating.getRentAmount(daysRented);
     }

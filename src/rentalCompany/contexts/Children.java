@@ -1,12 +1,12 @@
 package rentalCompany.contexts;
 
 public class Children extends Rating {
-    private static final int KIDS = 2;
+    private static final int CHILDREN = 2;
     @Override
     public int getPriceCode() {
-        int kids = KIDS;
-        
-        return kids;
+        int children = CHILDREN;
+
+        return children;
     }
 
     @Override

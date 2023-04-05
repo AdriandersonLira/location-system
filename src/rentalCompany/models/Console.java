@@ -17,6 +17,11 @@ public class Console implements Rentable {
         this.setPriceCode(priceCode);
     }
 
+    @Override
+    public String getTitle() {
+        return this.title;
+    }
+
     private void setPriceCode(int priceCode) {
         switch (priceCode) {
             case 0:
@@ -36,11 +41,6 @@ public class Console implements Rentable {
         }
 
         this.priceCode = priceCode;
-    }
-
-    @Override
-    public String getTitle() {
-        return this.title;
     }
 
     @Override
