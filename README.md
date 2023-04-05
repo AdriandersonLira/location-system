@@ -18,3 +18,4 @@
   * A injeção de dependência pode ser encontrada quando no arquivo (>./src/models/Rent.java) é criado um construtor recebendo como argumento o "Rentable". Assim toda vez no programa principal basta alterar lá.
 
 5 - 
+![Classe UML](https://user-images.githubusercontent.com/43156311/229991967-0df04da2-8392-4688-8a59-a27d4be26bb5.jpeg)
