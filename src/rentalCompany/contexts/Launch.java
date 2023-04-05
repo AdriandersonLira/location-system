@@ -12,17 +12,17 @@ public class Release extends Rating {
 
     @Override
     public double getRentAmount(int daysRented) {
-        double daysRentedCalc = daysRented * 3.00;
+        double price = daysRented * 3.00;
 
-        return daysRentedCalc;
+        return price;
     }
 
     @Override
     public int getFrequentRentPoints(int daysRented) {
-        int daysRentedCalc = daysRented > 1
+        int points = daysRented > 1
                 ? 2
                 : 1;
 
-        return daysRentedCalc;
+        return points;
     }
 }
